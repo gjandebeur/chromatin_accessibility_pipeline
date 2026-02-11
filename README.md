@@ -12,7 +12,8 @@ This project develops a SACS (Splicing-Associated Chromatin Score) scoring syste
 This projects supporting findings
 -AD-associated splicing changes likely occur through trans-acting factors (Sox family transcription factors) rather than cis-regulatory chromatin modifications, as many AD dysregulated microexon genes reside within the dynamically regulated SACS score (0/2) rather than highly accessible (SACS 4).
 
-<img width="844" height="418" alt="image" src="https://github.com/user-attachments/assets/85c7ccc0-c907-4c06-8a29-6295dbeeb31a" />
+<img width="749" height="203" alt="image" src="https://github.com/user-attachments/assets/2d6336b2-c5c1-445a-8392-68549568eb8d" />
+
 
 ### Key Findings 
 (all performed using public ENCODE RUSH AD database)
