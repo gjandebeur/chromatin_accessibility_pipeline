@@ -39,3 +39,48 @@ RUSH AD Center: https://www.radc.rush.edu/ (AD brain epigenomics)
 ### Tools used in this analysis 
 HOMER for motif analysis: http://homer.ucsd.edu/homer/
 VASTTOOLS (optional) for differential splicing: https://github.com/vastgroup/vast-tools
+
+
+## Quick Start
+
+Step 1: Edit config.txt to correct input paths (microexon data, chip/dnase-seq data, and output results path)
+
+Step 2: run the pipeline!
+
+```
+Rscript run_sacs_analysis.R
+```
+
+
+### Key Steps of Analysis
+1. Data Preprocessing
+   -filter microexons by percent spliced in (PSI) > 0.8, generate flanking genomic windows ~250nt each side of microexons with matched GC content.
+
+2. Chromatin Mark Processing
+   -process ChIP-seq peaks with **strand-aware** logic (forward & reverse)
+
+3. DNase Processing
+   -extract BigWig signal files & identify top 20% accessible microexons
+   -find DNase hypersensitivity peak overlaps
+
+4. SACS Integration
+   -merge chromatin components and calculate SACS scores
+   -validate with control regions and annotate with gene information
+
+5. Differential Splicing
+   -filter for dPSI > 0.10 between AD and control samples
+   -test chromatin accessibility differences at differentially spliced MEs
+   -Statistical testing with FDR correction
+
+6.Motif Enrichment
+  -prepare BED files for HOMER analysis to identify AD vs NCI increased chromatin accessibility regions
+
+
+#### Contact
+Author : Gabe Jandebeur
+*Rotation Lab*: Wren Lab
+Institution: University of Oklahoma Health Campus / Oklahoma Medical Research Foundation
+
+Acknowledgements
+-Wren Lab Members for their assistance and support
+-ENCODE Consortium for the countless reference datasets
