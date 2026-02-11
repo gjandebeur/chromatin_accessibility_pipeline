@@ -1,0 +1,50 @@
+# ============================================================================
+# SACS ANALYSIS CONFIGURATION
+# Edit the paths below to point to YOUR data files
+# ============================================================================
+
+# ============================================================================
+# INPUT DATA PATHS - EDIT THESE!
+# ============================================================================
+
+# Microexon data
+ME_ANNOTATIONS = "data/out.high_quality.txt"
+PSI_VALUES = "data/out_filtered_ME.PSI.txt"
+GTF_FILE = "data/out.high_quality.gtf"
+DIFF_SPLICING = "data/AD_vs_control.diff.microexons"  # Optional
+
+# ChIP-seq/DNase-seq directories
+DNASE_BED_DIR = "data/DNase_bed"           # DNase peak files (*.bed)
+DNASE_BIGWIG_DIR = "data/DNase_bigwig"     # DNase signal files (*.bw)
+H3K27AC_BIGWIG_DIR = "data/H3K27ac_bigwig" # H3K27ac signal files (*.bw)
+H3K27ME3_BED_DIR = "data/H3K27me3_bed"     # H3K27me3 peak files (*.bed)
+CTCF_BED_DIR = "data/CTCF_bed"             # CTCF peak files (*.bed)
+
+# Output directory
+OUTPUT_DIR = "results"
+
+# ============================================================================
+# ANALYSIS PARAMETERS - Usually don't need to change these
+# ============================================================================
+
+# Data filtering
+PSI_THRESHOLD = 0.8              # Minimum PSI for high-quality microexons
+FLANK_SIZE = 250                 # Window size for splice sites (bp)
+CONTROL_BUFFER = 1000            # Buffer around MEs for control exclusion (bp)
+MIN_INTRON_SIZE = 300            # Minimum intron size for controls (bp)
+CONTROLS_PER_ME = 5              # Number of control regions per ME
+
+# Chromatin thresholds
+DNASE_TOP_PERCENTILE = 0.80      # Top 20% threshold
+H3K27AC_TOP_PERCENTILE = 0.80    # Top 20% threshold
+
+# Differential analysis
+DPSI_THRESHOLD = 0.10            # Minimum |dPSI| for biological significance (10%)
+MIN_SAMPLES_PER_GROUP = 5        # Minimum samples for t-test
+P_VALUE_THRESHOLD = 0.05         # Nominal p-value
+FDR_THRESHOLD = 0.05             # FDR-adjusted p-value
+
+# HOMER parameters
+HOMER_GENOME = "hg38"            # Reference genome
+HOMER_WINDOW_SIZE = 250          # Window around ME for motif search (bp)
+HOMER_TOP_N = 50                 # Number of top regions per condition
