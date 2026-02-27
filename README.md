@@ -9,14 +9,14 @@ A 6-week rotation project investigating chromatin regulation of microexon splici
 
 This project develops a SACS (Splicing-Associated Chromatin Score) scoring system to investigate microexon splicing regulation in Alzheimer's disease using ENCODE RUSH AD data. The system integrates multiple chromatin marks (DNase-seq, H3K27ac, H3K27me3, CTCF) to predict microexon accessibility. Furthermore, this project investigated the differential transcription factor binding motifs using the HOMER pipeline, identifying key TF associated with AD (Alzheimer's Disease) or NCI (no cognitive impairment) pathology.
 
-This projects supporting findings
+This project's supporting findings
 -AD-associated splicing changes likely occur through trans-acting factors (Sox family transcription factors) rather than cis-regulatory chromatin modifications, as many AD dysregulated microexon genes reside within the dynamically regulated SACS score (0/2) rather than highly accessible (SACS 4).
 
 <img width="749" height="203" alt="image" src="https://github.com/user-attachments/assets/2d6336b2-c5c1-445a-8392-68549568eb8d" />
 
 
 ### Key Findings 
-(all performed using public ENCODE RUSH AD database)
+(all performed using the public ENCODE RUSH AD database)
 
 SACS = 4 microexons show ~2-4x enrichment in chromatin accessibility vs. matched controls
 Differentially spliced microexons (|dPSI| > 0.10) in AD include USP13, CERKL, STRADA, ANKRD30B, ABCC1, CACNA1H
@@ -74,14 +74,14 @@ Rscript run_sacs_analysis.R
    -Statistical testing with FDR correction
 
 6.Motif Enrichment
-  -prepare BED files for HOMER analysis to identify AD vs NCI increased chromatin accessibility regions
+   -prepare BED files for HOMER analysis to identify AD vs NCI increased chromatin accessibility regions
 
 
-#### Contact
-Author : Gabe Jandebeur
-*Rotation Lab*: Wren Lab
-Institution: University of Oklahoma Health Campus / Oklahoma Medical Research Foundation
+#### Contact Information
+Author : Gabe Jandebeur \n 
+*Rotation Lab*: Wren Lab \n 
+Institution: University of Oklahoma Health Campus & Oklahoma Medical Research Foundation
 
-Acknowledgements
--Wren Lab Members for their assistance and support
+Acknowledgements \n
+-Wren Lab Members for their assistance and support \n
 -ENCODE Consortium for the countless reference datasets
