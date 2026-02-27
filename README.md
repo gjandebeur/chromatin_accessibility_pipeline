@@ -78,10 +78,13 @@ Rscript run_sacs_analysis.R
 
 
 #### Contact Information
-Author : Gabe Jandebeur \n 
-*Rotation Lab*: Wren Lab \n 
+Author : Gabe Jandebeur 
+
+*Rotation Lab*: Wren Lab 
+
 Institution: University of Oklahoma Health Campus & Oklahoma Medical Research Foundation
 
-Acknowledgements \n
--Wren Lab Members for their assistance and support \n
+Acknowledgements 
+-Wren Lab Members for their assistance and support 
+
 -ENCODE Consortium for the countless reference datasets
